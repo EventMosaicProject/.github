@@ -1,0 +1,31 @@
+name: Sync profile README to root
+
+on:
+  push:
+    paths:
+      - 'profile/README.md'  # Запускать только если изменился этот файл
+    branches:
+      - main
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Copy README from profile to root
+        run: |
+          cp profile/README.md README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if ! git diff --quiet; then
+            git add README.md
+            git commit -m "Sync profile README to root"
+            git push
+          fi
