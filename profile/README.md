@@ -9,6 +9,8 @@
 
 ## ⚙️ Архитектура и ключевые компоненты
 
+![Event Mosaic Project](https://github.com/user-attachments/assets/d35cf53e-8ab1-41c4-a4a4-8795ed29b589)
+
 | Репозиторий        | Описание                                      |
 |--------------------|----------------------------------------------|
 | [docker](https://github.com/EventMosaicProject/docker) | **Docker-конфигурации** для развертывания всех микросервисов. |
