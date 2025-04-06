@@ -9,7 +9,7 @@
 
 ## ⚙️ Архитектура и ключевые компоненты
 
-![Event Mosaic Project](https://github.com/user-attachments/assets/d35cf53e-8ab1-41c4-a4a4-8795ed29b589)
+![Event Mosaic Project](https://github.com/user-attachments/assets/b5245ddc-cf49-44ba-89f8-811bcf4fab4f)
 
 | Репозиторий        | Описание                                      |
 |--------------------|----------------------------------------------|
